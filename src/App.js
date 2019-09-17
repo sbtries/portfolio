@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { AnimatedSwitch } from 'react-router-transition';
 import { Button, Navbar, Nav, NavDropdown, form} from 'react-bootstrap'
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
@@ -21,8 +21,8 @@ function App() {
      <Navbar bg="light" variant="light">
     <Navbar.Brand>A Basic Portfolio Site</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link class="text-muted"><Link to="/">Home</Link></Nav.Link>
-      <Nav.Link class="link"><Link to="/about">About</Link></Nav.Link>
+      <Nav.Link class="text-muted"><Link to="/" class="text-muted">Home</Link></Nav.Link>
+      <Nav.Link class="link"><Link to="/about" class="text-muted">About</Link></Nav.Link>
       <Nav.Link class="link"><Link to="/contact" class="text-muted">Contact</Link></Nav.Link>
 
     </Nav>
